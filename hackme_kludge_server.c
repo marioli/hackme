@@ -126,7 +126,7 @@ void *client_worker(void *data)
 
   if(ctx->password_accepted)
   {
-    snprintf(tmp_data, sizeof(tmp_data), "Congratulations. Password accepted!\n\n");
+    snprintf(tmp_data, sizeof(tmp_data), "Congratulations. Password '%s' accepted!\n\n", passkey);
   }
   else
   {
